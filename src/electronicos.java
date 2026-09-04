@@ -22,6 +22,13 @@ public class electronicos extends  Productos {
         this.consumoKwh = 1.5;
         this.tieneGarantia = true;
     }
+    public electronicos(String nombre, int idproducto, String fabricante, int voltaje) {
+        super(nombre, idproducto);
+        this.fabricante = fabricante;
+        this.voltaje = voltaje;
+        this.consumoKwh = 1.0;
+        this.tieneGarantia = true;
+    }
 
     public void encendio () {
 
