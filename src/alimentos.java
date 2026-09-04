@@ -14,8 +14,20 @@ public class alimentos extends  Productos{
         this.contenidoNetoMl = contenidoNetoMl;
         this.diasCaducidad = diasCaducidad;
         this.requiereRefrigeracion = requiereRefrigeracion;
-
-
+    }
+    public alimentos(String nombre, int idproducto, double precio, String tipoEmpaque, int contenidoNetoML) {
+        super(nombre, idproducto, precio);
+        this.tipoEmpaque = tipoEmpaque;
+        this.contenidoNetoMl = contenidoNetoML;
+        this.diasCaducidad = 30.0;
+        this.requiereRefrigeracion = false;
+    }
+    public alimentos(String nombre, int idproducto, String tipoEmpaque, int contenidoNetoML) {
+        super(nombre, idproducto);
+        this.tipoEmpaque = tipoEmpaque;
+        this.contenidoNetoMl = contenidoNetoML;
+        this.diasCaducidad = 15.0;
+        this.requiereRefrigeracion = false;
     }
     public void probaralimento () {
 
