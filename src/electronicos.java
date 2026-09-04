@@ -59,10 +59,9 @@ public class electronicos extends  Productos {
     public void setTieneGarantia(boolean tieneGarantia) {
         this.tieneGarantia = tieneGarantia;
     }
-
-    public void encendio () {
-
-        System.out.println("Se enciende");
-
+    @Override
+    public String toString() {
+        return "Electronico"  + super.toString() + " Fabricante: " + fabricante +
+                " Voltaje: " + voltaje + "V, Consumo: " + consumoKwh + "kWh, Garantía: " + tieneGarantia;
     }
 }

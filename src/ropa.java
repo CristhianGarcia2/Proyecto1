@@ -60,11 +60,9 @@ public class ropa extends  Productos{
     public void setAptaPlanchado(boolean aptaPlanchado) {
         this.aptaPlanchado = aptaPlanchado;
     }
-
-
-    public void probarropa () {
-
-        System.out.println("Se prueba la ropa");
-
+    @Override
+    public String toString() {
+        return "Ropa" + super.toString() + ", Material: " + material +
+                ", Peso: " + pesoGramos + "g, Talla: " + talla + ", Apta planchado: " + aptaPlanchado ;
     }
 }

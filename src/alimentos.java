@@ -59,10 +59,9 @@ public class alimentos extends  Productos{
     public void setRequiereRefrigeracion(boolean requiereRefrigeracion) {
         this.requiereRefrigeracion = requiereRefrigeracion;
     }
-
-    public void probaralimento () {
-
-        System.out.println("Se prueba el alimento");
-
+    @Override
+    public String toString() {
+        return "Alimento" + super.toString() + ", Empaque: " + tipoEmpaque +
+                ", Contenido: " + contenidoNetoMl + "ml, Caducidad: " + diasCaducidad + " días, Refrigeración: " + requiereRefrigeracion;
     }
 }
