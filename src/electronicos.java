@@ -30,6 +30,36 @@ public class electronicos extends  Productos {
         this.tieneGarantia = true;
     }
 
+    //Get
+
+    public String getFabricante() {
+        return fabricante;
+    }
+    public int getVoltaje() {
+        return voltaje;
+    }
+    public double getConsumoKwh() {
+        return consumoKwh;
+    }
+    public boolean isTieneGarantia() {
+        return tieneGarantia;
+    }
+
+    //Set
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+    public void setVoltaje(int voltaje) {
+        this.voltaje = voltaje;
+    }
+    public void setConsumoKwh(double consumoKwh) {
+        this.consumoKwh = consumoKwh;
+    }
+    public void setTieneGarantia(boolean tieneGarantia) {
+        this.tieneGarantia = tieneGarantia;
+    }
+
     public void encendio () {
 
         System.out.println("Se enciende");

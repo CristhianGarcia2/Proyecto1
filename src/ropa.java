@@ -31,6 +31,36 @@ public class ropa extends  Productos{
         this.aptaPlanchado = true;
     }
 
+    //Get
+
+    public String getMaterial() {
+        return material;
+    }
+    public int getPesoGramos() {
+        return pesoGramos;
+    }
+    public double getTalla() {
+        return talla;
+    }
+    public boolean isAptaPlanchado() {
+        return aptaPlanchado;
+    }
+
+    //Set
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+    public void setPesoGramos(int pesoGramos) {
+        this.pesoGramos = pesoGramos;
+    }
+    public void setTalla(double talla) {
+        this.talla = talla;
+    }
+    public void setAptaPlanchado(boolean aptaPlanchado) {
+        this.aptaPlanchado = aptaPlanchado;
+    }
+
 
     public void probarropa () {
 

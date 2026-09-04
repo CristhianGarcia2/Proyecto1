@@ -29,6 +29,37 @@ public class alimentos extends  Productos{
         this.diasCaducidad = 15.0;
         this.requiereRefrigeracion = false;
     }
+
+    //Get
+
+    public String getTipoEmpaque() {
+        return tipoEmpaque;
+    }
+    public int getContenidoNetoML() {
+        return contenidoNetoMl;
+    }
+    public double getDiasCaducidad() {
+        return diasCaducidad;
+    }
+    public boolean isRequiereRefrigeracion() {
+        return requiereRefrigeracion;
+    }
+
+    //Set
+
+    public void setTipoEmpaque(String tipoEmpaque) {
+        this.tipoEmpaque = tipoEmpaque;
+    }
+    public void setContenidoNetoML(int contenidoNetoMl) {
+        this.contenidoNetoMl = contenidoNetoMl;
+    }
+    public void setDiasCaducidad(double diasCaducidad) {
+        this.diasCaducidad = diasCaducidad;
+    }
+    public void setRequiereRefrigeracion(boolean requiereRefrigeracion) {
+        this.requiereRefrigeracion = requiereRefrigeracion;
+    }
+
     public void probaralimento () {
 
         System.out.println("Se prueba el alimento");
