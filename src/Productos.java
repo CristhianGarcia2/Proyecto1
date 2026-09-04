@@ -16,6 +16,11 @@ public class Productos {
             this.idproducto = idproducto;
             this.precio = precio;
             this.stock = true;
-
+    }
+    public Productos(String nombre, int idproducto) {
+        this.nombre = nombre;
+        this.idproducto = idproducto;
+        this.precio = 0.0;
+        this.stock = true;
     }
 }
