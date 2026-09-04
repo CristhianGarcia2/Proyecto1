@@ -26,5 +26,11 @@ public class Main {
         yogurt.setTipoEmpaque("Vidrio");
         System.out.println("Empaque modificado: " + yogurt.getTipoEmpaque());
 
+        //Revision del polimorfismo
+
+        System.out.println("ESTADO FINAL DE LOS OBJETOS");
+        System.out.println(televisor.toString());
+        System.out.println(camisa.toString());
+        System.out.println(yogurt.toString());
     }
 }
